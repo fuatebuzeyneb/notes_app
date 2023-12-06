@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:notes_app/consts.dart';
 import 'package:notes_app/views/notes_view_body.dart';
-
-import '../widgets/custom_add_bottom.dart';
+import 'package:notes_app/widgets/custom_add_button.dart';
 
 class HomeView extends StatelessWidget {
   const HomeView({super.key});
 
+  static String id = 'HomeView';
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -21,7 +21,7 @@ class HomeView extends StatelessWidget {
               ),
               context: context,
               builder: (context) {
-                return const CustomAddBottom();
+                return const CustomAddButton();
               });
         },
         child: const Icon(

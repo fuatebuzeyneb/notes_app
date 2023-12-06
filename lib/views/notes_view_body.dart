@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:notes_app/widgets/custom_appbar_widget.dart';
-import 'package:notes_app/widgets/custom_listview_for_note_card.dart';
+import 'package:notes_app/widgets/custom_listview_for_note_card.widget.dart';
 
-class NotesViewBoldy extends StatelessWidget {
-  const NotesViewBoldy({super.key});
+class NotesViewBody extends StatelessWidget {
+  const NotesViewBody({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -16,7 +16,7 @@ class NotesViewBoldy extends StatelessWidget {
           ),
           CustomAppBarWidget(),
           Expanded(
-            child: CustomListviewForNoteCard(),
+            child: CustomListviewForNoteCardWidget(),
           ),
         ],
       ),

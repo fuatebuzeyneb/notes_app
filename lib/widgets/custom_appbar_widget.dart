@@ -15,9 +15,7 @@ class CustomAppBarWidget extends StatelessWidget {
         ),
         const Spacer(),
         CustomAppBarIconWidget(
-          icon: text == 'Notes'
-              ? const Icon(Icons.search)
-              : const Icon(Icons.check),
+          icon: text == 'Notes' ? Icons.search : Icons.check,
         ),
       ],
     );

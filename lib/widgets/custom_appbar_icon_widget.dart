@@ -5,7 +5,7 @@ class CustomAppBarIconWidget extends StatelessWidget {
     super.key,
     required this.icon,
   });
-  final Icon icon;
+  final IconData icon;
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -14,7 +14,7 @@ class CustomAppBarIconWidget extends StatelessWidget {
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(8),
           color: Colors.grey.withOpacity(0.1)),
-      child: icon,
+      child: Icon(icon),
     );
   }
 }

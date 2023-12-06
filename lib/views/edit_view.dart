@@ -17,7 +17,7 @@ class EditView extends StatelessWidget {
               height: 50,
             ),
             CustomAppBarWidget(
-              text: 'Edit',
+              text: 'Edit Note',
             ),
             SizedBox(
               height: 40,

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:notes_app/consts.dart';
 import 'package:notes_app/views/notes_view_body.dart';
-import 'package:notes_app/widgets/custom_add_button.dart';
+import 'package:notes_app/views/widgets/custom_add_button.dart';
 
 class HomeView extends StatelessWidget {
   const HomeView({super.key});

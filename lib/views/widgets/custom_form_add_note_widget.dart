@@ -4,6 +4,7 @@ import 'package:intl/intl.dart';
 import 'package:notes_app/cubits/add_note_cubit/add_note_cubit.dart';
 import 'package:notes_app/models/note_model.dart';
 import 'package:notes_app/views/widgets/custom_button_widget.dart';
+import 'package:notes_app/views/widgets/custom_color_listview_widget.dart';
 import 'package:notes_app/views/widgets/custom_text_field_widget.dart';
 
 class FormAddNote extends StatefulWidget {
@@ -48,7 +49,14 @@ class _FormAddNoteState extends State<FormAddNote> {
             maxLine: 5,
           ),
           const SizedBox(
-            height: 50,
+            height: 20,
+          ),
+          const SizedBox(
+            height: 35,
+            child: CustomColorListViewWidget(),
+          ),
+          const SizedBox(
+            height: 20,
           ),
           BlocBuilder<AddNoteCubit, AddNoteState>(
             builder: (context, state) {

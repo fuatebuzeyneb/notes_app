@@ -9,11 +9,9 @@ import 'custom_text_widget.dart';
 class CustomNoteCardWidget extends StatelessWidget {
   const CustomNoteCardWidget({
     super.key,
-    required this.colors,
     required this.note,
   });
   final NoteModel note;
-  final Color colors;
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;

@@ -20,29 +20,23 @@ class CustomAppBarWidget extends StatelessWidget {
         Row(
           children: [
             CustomAppBarIconWidget(
-              icon: text == 'Notes' ? Icons.add : Icons.close,
-              onTap: () {
-                text == 'Notes'
-                    ? showModalBottomSheet(
-                        isScrollControlled: true,
-                        shape: const RoundedRectangleBorder(
-                          borderRadius: BorderRadius.only(
-                              topLeft: Radius.circular(50),
-                              topRight: Radius.circular(50)),
-                        ),
-                        context: context,
-                        builder: (context) {
-                          return const CustomAddButton();
-                        })
-                    : Navigator.pop(context);
-              },
-            ),
-            const SizedBox(
-              width: 10,
-            ),
-            CustomAppBarIconWidget(
-                icon: text == 'Notes' ? Icons.search : Icons.check,
-                onTap: onTap),
+                icon: text == 'Notes' ? Icons.add : Icons.check,
+                onTap: text == 'Notes'
+                    ? () {
+                        showModalBottomSheet(
+                          isScrollControlled: true,
+                          shape: const RoundedRectangleBorder(
+                            borderRadius: BorderRadius.only(
+                                topLeft: Radius.circular(50),
+                                topRight: Radius.circular(50)),
+                          ),
+                          context: context,
+                          builder: (context) {
+                            return const CustomAddButton();
+                          },
+                        );
+                      }
+                    : onTap),
           ],
         )
       ],

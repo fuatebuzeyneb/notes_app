@@ -20,30 +20,9 @@ class CustomListviewForNoteCardWidget extends StatelessWidget {
               padding: EdgeInsets.zero,
               itemCount: notes.length,
               itemBuilder: (context, index) {
-                // final colors = [
-                //   Colors.red,
-                //   Colors.blue,
-                //   Colors.green,
-                //   Colors.orange,
-                //   Colors.purple,
-                //   Colors.teal,
-                //   Colors.pink,
-                //   Colors.indigo,
-                //   Colors.amber,
-                //   Colors.cyan,
-                //   Colors.lime,
-                //   Colors.deepOrange,
-                //   Colors.deepPurple,
-                //   Colors.yellow,
-                //   Colors.lightBlue,
-                // ];
-
-                // final colorIndex = index % colors.length;
-                // final color = colors[colorIndex];
                 return Padding(
                   padding: const EdgeInsets.only(bottom: 8),
                   child: CustomNoteCardWidget(
-                    colors: Colors.pink,
                     note: notes[index],
                   ),
                 );
